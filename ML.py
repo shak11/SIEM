@@ -1,7 +1,6 @@
 from sklearn import preprocessing as pre
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-import matplotlib.pyplot as plt
 import pandas as pd
 import consts as c
 
@@ -21,8 +20,6 @@ def df_convert_str_to_numeric(df):
 
 
 def get_attacks(df, features):
-    # print("Data Shape : ", df.shape)
-    # print(df.head())
 
     # Set featured columns
     features = df.loc[:, features].values
@@ -70,24 +67,8 @@ def get_min_max(ml):
     return min_x, min_y, max_x, max_y
 
 
-# If we ever would want to plot something..
-def df_to_plot(df):
-    plt.figure()
-    plt.figure(figsize=(10, 10))
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=14)
-    plt.xlabel('Component - 1', fontsize=20)
-    plt.ylabel('Component - 2', fontsize=20)
-    plt.title("Component Analysis Dataset", fontsize=20)
-    targets = ['component 1', 'component 2']
-    color = 'r'
-    # indicesToKeep = df['label'] == target
-    # indicesToKeep = target
-    plt.scatter(df.loc[:, 'component 1']
-                , df.loc[:, 'component 2'], c=color, s=50)
 
-    plt.legend(targets, prop={'size': 15})
-    plt.show()
+
 
 
 
