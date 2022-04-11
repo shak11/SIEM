@@ -56,7 +56,7 @@ Third tab:
 ```sh
 python3 WebUI.py
 ```
-This will allow you to monitor your current network
+This will allow you to monitor your current network through a web interface 
 
 ## License
 Ronen Vaaleni , Netanel Levi, Shaked Beno
