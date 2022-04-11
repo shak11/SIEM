@@ -24,7 +24,7 @@ If you would like to monitor windows endpoints you need to install [evt2syslog] 
 3. Install this as a service and enter the IP of the computer that runs SIEM
 It should look like this
 ```sh
-evt.exe -h xxx.xxx.xxx.xxx
+evtsys.exe -i -h xxx.xxx.xxx.xxx (ip address)
 ```
 
 
@@ -63,4 +63,5 @@ Ronen Vaaleni , Netanel Levi, Shaked Beno
 
    [Python]: <https://www.python.org/>
    [sklearn]:<https://scikit-learn.org/stable/>
+   [evt2syslog]:<https://code.google.com/archive/p/eventlog-to-syslog/downloads>
 
